@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+	<script src="https://kit.fontawesome.com/d96c864795.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+
+<div class="container">
+	<p class="budgetLabel">Available Budget in <span class="month"></span>:</p>
+	<h1 class="budgetAmount">0.00</h1>
+
+	<p class="income styler"> INCOME <span class="totalIncome">0.00</span> </p>
+	<p class="expenses styler"> EXPENSES <span class="expensePercentage">50%</span> <span class="totalExpense">0.00</span> </p>
+
+</div>
+
+<div class="formContainer">
+	<select>
+		  <option value="income">+</option>
+		  <option value="expense">-</option>
+	</select>
+	<input type="text" placeholder="Add Description" class="itemDesc" required>
+	<input type="number" placeholder="Value" class="itemValue" required>
+	<i class="far fa-check-circle submit"></i>
+</div>
+
+<div class="grid">
+	<div class="incomeColumn">
+		<h3 style="color: #28B9B5">INCOME</h3>
+		<ul class="incomeList">
+			<!-- <li>test1 <span class="liIncomeAmount">546</span> </li> -->
+		</ul>
+
+	</div>
+	<div class="expensesColumn">
+		<h3 style="color: #FF514A">EXPENSES</h3>
+		<ul class="expenseList">
+			<!-- <li>test1  <i class="far fa-times-circle itemDeleteBtn "> </i> <span class="liPercentage">50%</span><span class="liExpenseAmount">546</span></li> -->
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>

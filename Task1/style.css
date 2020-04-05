@@ -1,0 +1,112 @@
+body{
+	background-color: #F7F7F7;
+	margin:0;
+	padding: 0;
+}
+.container{
+	background-image: url("resources/sand.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin:0.5rem;
+	margin-bottom: 0;
+}
+.budgetLabel{
+	margin-bottom: 0.4rem;
+	font-size: 1.5rem;
+}
+.budgetAmount{
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+.totalIncome{
+	color:white;
+	float: right;
+}
+.totalExpense{
+	color:white;
+	float: right;
+}
+.styler{
+	padding: 0.5rem;
+	font-size: 1.1rem;
+	width: 20rem;
+	margin-bottom: 0;
+}
+.income{
+	background-color: #28B9B5;
+}
+.expenses{
+	background-color: #FF514A;
+	margin-top: 0.5rem;
+	margin-bottom: 2rem;
+}
+.formContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding:0.4rem;
+}
+.formContainer input,select{
+	margin-right: 1rem;
+	font-size: 1rem;
+	padding: 0.3rem;
+}
+.submit{
+	font-size: 1.5rem;
+    color: green;
+    cursor: pointer;
+}
+.grid{
+	    display: grid;
+    justify-content: center;
+    grid-template-columns: 20rem 20rem;
+    background-color: white;
+    grid-column-gap: 2rem;
+    margin:0.5rem;
+}
+ul{
+	list-style: none;
+	padding: 0;
+}
+li{
+    border-top: 1px solid #c0c3c5;
+    padding: 0.4rem 0.5rem;
+}
+li:last-child{
+	border-bottom: 1px solid #c0c3c5;
+}
+li:nth-child(2n){
+ background-color: #F7F7F7;
+}
+.liPercentage{
+	float: right;
+    color: #c32019;
+    margin-left: 0.5rem;
+    background-color: #ee9e9e;
+}
+.expensePercentage{
+	float: right;
+    color: #c32019;
+    margin-left: 0.5rem;
+    background-color: #ee9e9e;
+    display: none;
+}
+.liExpenseAmount{
+	float:right;
+	color: #FF514A;
+}
+.liIncomeAmount{
+	float:right;
+	color: #28B9B5;
+}
+.itemDeleteBtn{
+	color: #FF514A;
+	float: right;
+	cursor: pointer;
+	margin-left: 0.5rem;
+}
