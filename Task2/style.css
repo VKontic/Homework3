@@ -1,0 +1,96 @@
+body{
+	margin:0;
+	padding: 0;
+	font-family: cursive;
+}
+.container{
+	display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 100%; */
+    background-color: #cdd2e6;
+}
+input[type='text']{
+	font-size: 1rem;
+	padding: 0.3rem 1rem;
+}
+.submit{
+	padding: 0.3rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.loadMore{
+	margin-bottom: 2rem;
+}
+select{
+	font-size: 1rem;
+    padding: 0.3rem;
+}
+.form{
+	margin-top: 12.5vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 60vw;
+}
+.games{
+	text-align: center;
+}
+table{
+	border: 2px solid black;
+	width: 60vw;
+	text-align: center;
+	table-layout: fixed;
+	border-spacing: 0.7rem;
+	margin-bottom: 1rem;
+}
+img{
+    width: 100%;
+    object-fit: fill;
+    height: auto;
+    max-height: 10rem;
+    display: block;
+}
+.idColumn{
+	width: 5%;
+}
+.deleteColumn{
+	width: 7%;
+}
+.imgColumn{
+	width: 25%;
+}
+.ratingColumn{
+	width: 15%;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+.deleteBtn{
+	color:red;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+.imageContainer{
+	position: relative;
+	text-align: center;
+}
+.gameName{
+	opacity: 0; 
+    position: absolute;
+    top: 50%;
+    font-size: 1.2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+.imageContainer:hover .gameName{
+ opacity: 1;
+}
+.imageContainer:hover img {
+  opacity: 0.3;
+}

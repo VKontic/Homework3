@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task2</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+	<script src="https://kit.fontawesome.com/d96c864795.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- https://jsonblob.com/3d328387-7749-11ea-9f37-87dfa66242e4 -->
+
+<div class="container">
+
+	<div class="form">
+		<input type="text" class="search" placeholder="Type Here">
+		<button class="submit">Search</button>
+		<div class="radioGroup">
+			<input type="radio" id="radioName" name="radio" value="name" checked>
+			<label for="radioName">Ime</label>
+		</div>
+		<div class="radioGroup">
+			<input type="radio" id="radioGenre" name="radio" value="genre">
+			<label for="radioGenre">Žanr</label>
+		</div>
+		
+
+		<select id="ratings">
+		  <option value="1">Ocjena</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5">5</option>
+		  <option value="6">6</option>
+		  <option value="7">7</option>
+		  <option value="8">8</option>
+		  <option value="9">9</option>
+		  <option value="10">10</option>
+		</select>
+	</div>
+	
+	<div class="games">
+		<table>
+			<tr>
+				<th class="idColumn">Broj</th>
+				<th class="imgColumn">Slika</th>
+				<th>Izvođač</th>
+				<th>Žanr</th>
+				<th class="ratingColumn">Ocjena</th>
+				<th class="deleteColumn">Obriši</th>
+			</tr>
+		</table>
+		<button class="loadMore submit">Load More</button>
+	</div>
+	
+</div>
+
+</body>
+</html>

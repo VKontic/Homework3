@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Super Mario Bros",
+    "image": "https://static.independent.co.uk/s3fs-public/styles/article_small/public/thumbnails/image/2014/09/19/16/Super%20Mario%20Bros.jpg",
+    "publisher": "Nintendo",
+    "genres": "Platform",
+    "rating": 10,
+    "url": "https://en.wikipedia.org/wiki/Super_Mario_Bros."
+  },
+  {
+    "name": "Tetris",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Tetris_Boxshot.jpg/220px-Tetris_Boxshot.jpg",
+    "publisher": "Nintendo",
+    "genres": "Puzzle",
+    "rating": 8,
+    "url": "https://en.wikipedia.org/wiki/Tetris_(Game_Boy_video_game)"
+  },
+  {
+    "name": "Ikariam",
+    "image": "https://www.tobiasdunz.com/wp-content/uploads/2017/08/overview_ikariam.jpg",
+    "publisher": "Gameforge",
+    "genres": "Strategy",
+    "rating": 10,
+    "url": "https://lobby.ikariam.gameforge.com/sr_RS/"
+  },
+  {
+    "name": "2048",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/2048_logo.svg/220px-2048_logo.svg.png",
+    "publisher": "Solebon LLC",
+    "genres": "Puzzle",
+    "rating": 7,
+    "url": "https://play2048.co/"
+  },
+  {
+    "name": "Call of Duty 2",
+    "image": "https://upload.wikimedia.org/wikipedia/en/d/d1/Call_of_Duty_2_Box.jpg",
+    "publisher": "Activision",
+    "genres": "FPS, War",
+    "rating": 9,
+    "url": "https://www.callofduty.com/"
+  },
+  {
+    "name": "Counter-Strike",
+    "image": "https://upload.wikimedia.org/wikipedia/sr/thumb/6/67/Counter-Strike_Box.jpg/220px-Counter-Strike_Box.jpg",
+    "publisher": "Vivendi Universal",
+    "genres": "FPS",
+    "rating": 7,
+    "url": "https://blog.counter-strike.net/"
+  }
+]
