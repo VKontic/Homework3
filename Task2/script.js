@@ -1,4 +1,3 @@
-var counter = 0;
 let table = document.querySelector('table');
 let search = document.querySelector('.search');
 let submitBtn = document.querySelector('.submit');
@@ -23,8 +22,7 @@ fetch("json.json")
     });
 
 function updateTable(jsonGames){
-    jsonData = jsonGames; //create global variable with json data
-    loadFromElement(0, jsonData);
+    loadFromElement(0, jsonGames);
 }
 
 function loadFromElement(index, jsonGames){
@@ -33,22 +31,22 @@ function loadFromElement(index, jsonGames){
         end = jsonGames.length;
     }
     for (let i = index; i<end; i++){
+        let id = jsonGames[i].id;
         let name = jsonGames[i].name;
         let imageLink = jsonGames[i].image;
         let publisher = jsonGames[i].publisher;
         let genres = jsonGames[i].genres;
         let rating = jsonGames[i].rating;
         let url = jsonGames[i].url;
-       createRow(name,imageLink,publisher,genres,rating,url);
+       createRow(id,name,imageLink,publisher,genres,rating,url);
    }
 }
 
-function createRow(name,imageLink,publisher,genres,rating,url){
+function createRow(id,name,imageLink,publisher,genres,rating,url){
     let tr = document.createElement('tr');
 
     let tdId = document.createElement('td');
-    tdId.innerText = counter;
-    counter ++;
+    tdId.innerText = id;
 
      let tdImage = document.createElement('td');
         let div = document.createElement('div');
@@ -98,6 +96,7 @@ function filter(){
         .then(response => response.json())
         .then(function(jsonGames){
             for (let i = 0; i<jsonGames.length; i++){
+                let id = jsonGames[i].id;
                 let name = jsonGames[i].name;
                 let imageLink = jsonGames[i].image;
                 let publisher = jsonGames[i].publisher;
@@ -107,11 +106,11 @@ function filter(){
                 if (rtg > rating.value ){
                     if (filter === 'name'){
                         if (name.toLowerCase().indexOf(search.value.toLowerCase().trim()) >= 0){
-                            createRow(name,imageLink,publisher,genres,rtg,url);
+                            createRow(id,name,imageLink,publisher,genres,rtg,url);
                         }
                     }else if (filter === 'genre'){
                         if (genres.toLowerCase().indexOf(search.value.toLowerCase().trim())>= 0){
-                            createRow(name,imageLink,publisher,genres,rtg,url);
+                            createRow(id,name,imageLink,publisher,genres,rtg,url);
                         }
                     }
                 }
@@ -124,8 +123,26 @@ function filter(){
 }
 
 function loadMore(){
-    let currNumberOfItems = document.querySelectorAll('tr').length-1;
-    loadFromElement(currNumberOfItems, jsonData);
+    if(table.childElementCount <= 1){
+        //table is empty
+    fetch("json.json")
+        .then(handleErrors)
+        .then(response => response.json())
+        .then(data=>loadFromElement(0,data))
+        .catch(function(error) {
+            console.log(error);
+        });
+
+    }else{
+        let startIndex = Number(table.lastElementChild.firstElementChild.innerText);
+        fetch("json.json")
+        .then(handleErrors)
+        .then(response => response.json())
+        .then(data=>loadFromElement(startIndex,data))
+        .catch(function(error) {
+            console.log(error);
+        });
+    }
 }
 
 function removeItem(e){
