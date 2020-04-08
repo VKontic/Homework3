@@ -1,0 +1,75 @@
+
+body{
+	background: radial-gradient(circle, rgba(66,180,231,1) 0%, rgba(47,95,212,1) 100%);
+    background-repeat: no-repeat;
+	padding: 0;
+	margin:0;
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.txtInput{
+	font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-right: 2rem;
+    width: 20rem;
+    border: 0;
+    border-radius: 0.5rem;
+}
+.btn {
+	box-shadow: 7px 5px 22px 2px #182f71;
+    background: linear-gradient(to bottom, #0e6dce 5%, #1d4879 100%);
+    background-color: #1262eb;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 0.3rem 1rem;
+    text-shadow: 0px 1px 0px #aebee8;
+    font-size: 1rem;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #1b4370 5%, #1262eb 100%);
+	background-color:#1b4370;
+}
+ul{
+	border: 2px solid #90acd9;
+    border-radius: 1rem;
+    list-style: none;
+    text-align: center;
+    width: 25rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background: #ede9e1;
+}
+.container{
+	margin-top: 10vh;
+}
+li{
+	border-bottom: 1px solid #44649c;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    FONT-VARIANT: JIS04;
+    margin: 1rem;
+}
+.done{
+	text-decoration-line : line-through;
+	color :#d54949 ;
+}
+.chckBox{
+	float: right;
+	margin-right: 1rem;
+}
+.deleteBtn{
+	color: red;
+	float: right;
+}
+.deleteBtn{
+	cursor: pointer;
+}
+.deleteBtn:hover{
+	background-color: #e00505;
+    color: #000000;
+    border: 0;
+    border-radius: 1rem;
+}
